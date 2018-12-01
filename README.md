@@ -1,11 +1,11 @@
 Here provide some tools to modify your face datasets.
 
-## requirements
+## Requirements
 ```
 pip install -r requirements.txt
 ```
 
-##  rename or resize your dataset
+##  Rename or resize your dataset
 You can use organ_data.py to rename your original image name as class_number.png like this:
 ```
 /home/david/datasets/my_dataset/test
@@ -25,7 +25,7 @@ python organ_data.py --data_dir your_data_folder --save_dir your_path_to_save_re
 The path should end with '/'.
 if you want to resize your dataset, just set the argument resize as True and set the resize_num argument. The resize operator wouldn't rename your datasets.
 ```
-python organ_data.py --data_dir your_data_folder --save_dir your_path_to_save_rensize_data 
+python organ_data.py --data_dir your_data_folder --save_dir your_path_to_save_rensize_data
 --resize True --resize_num 112
 ```
 
@@ -33,5 +33,5 @@ python organ_data.py --data_dir your_data_folder --save_dir your_path_to_save_re
 ## Generate the pars.txt
 if you want to generate pairs.txt like lfw datasets, you should organize your data structure as above(the image name is consisted of folder name and number). Then you can use generate_pairs.py to generate pairs
 ```
-python generate_pairs.py --data_dir your_data_path --save_dir your_path_to_save_pairs.txt
+python generate_pairs.py --data_dir your_data_path --save_dir your_path_to_save_pairs
 ```

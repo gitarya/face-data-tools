@@ -15,7 +15,7 @@ class GeneratePairs:
         Parameter img_ext, is the image data extension for all of your image data.
         """
         self.data_dir = args.data_dir
-        self.pairs_filepath = args.saved_dir + 'pairs.txt'
+        self.pairs_filepath = args.save_dir + 'pairs.txt'
         self.repeat_times = int(args.repeat_times)
         self.img_ext = '.png'
 
@@ -89,7 +89,7 @@ class GeneratePairs:
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', type=str, help='Directory with aligned images.', default='/nfs/data1/datasets/ourPhoto_112/')
-    parser.add_argument('--saved_dir', type=str, help='Directory to save pairs.', default='/nfs/data1/datasets/ourPhoto_112/')
+    parser.add_argument('--save_dir', type=str, help='Directory to save pairs.', default='/nfs/data1/datasets/ourPhoto_112/')
     parser.add_argument('--repeat_times', type=str, help='Repeat times to generate pairs', default=100)
     return parser.parse_args(argv)
 
