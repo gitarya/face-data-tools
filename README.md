@@ -30,7 +30,7 @@ python organ_data.py --data_dir your_data_folder --save_dir your_path_to_save_re
 ```
 
 
-## Generate the pars.txt
+## Generate the pairs.txt
 if you want to generate pairs.txt like lfw datasets, you should organize your data structure as above(the image name is consisted of folder name and number). Then you can use generate_pairs.py to generate pairs
 ```
 python generate_pairs.py --data_dir your_data_path --save_dir your_path_to_save_pairs
